@@ -1,0 +1,6 @@
+@MediChain.API_HostAddress = http://localhost:5284
+
+GET {{MediChain.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

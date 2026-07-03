@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="MediChain.API/MediChain.API.csproj" />
+  <Project Path="MediChain.Infrastructure/MediChain.Infrastructure.csproj" />
+</Solution>
