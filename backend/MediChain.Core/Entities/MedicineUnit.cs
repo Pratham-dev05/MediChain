@@ -9,6 +9,7 @@ public class MedicineUnit : BaseEntity
     public string QRCode { get; set; } = string.Empty;
 
     public string BlockchainHash { get; set; } = string.Empty;
+
     public Guid CurrentOwnerId { get; set; }
 
     public User CurrentOwner { get; set; } = null!;
@@ -16,11 +17,10 @@ public class MedicineUnit : BaseEntity
     public int VerificationCount { get; set; }
 
     public DateTime? LastVerifiedAt { get; set; }
+
     public bool IsSold { get; set; }
 
     public bool IsReportedFake { get; set; }
-
-    // Navigation Properties
 
     public ICollection<OwnershipHistory> OwnershipHistories { get; set; }
         = new List<OwnershipHistory>();
@@ -29,6 +29,5 @@ public class MedicineUnit : BaseEntity
         = new List<FakeReport>();
 
     public ICollection<VerificationLog> VerificationLogs { get; set; }
-    = new List<VerificationLog>();
-        
+        = new List<VerificationLog>();
 }
