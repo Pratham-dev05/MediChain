@@ -3,12 +3,10 @@ namespace MediChain.Core.Enums;
 public enum MedicineStatus
 {
     Manufactured = 1,
-
     InTransit = 2,
-
-    AtPharmacy = 3,
-
-    Sold = 4,
-
-    ReportedFake = 5
+    AtDistributor = 3,
+    AtPharmacy = 4,
+    Sold = 5,
+    Recalled = 6,
+    ReportedFake = 7
 }

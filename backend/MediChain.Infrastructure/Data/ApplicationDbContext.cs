@@ -11,4 +11,8 @@ public class ApplicationDbContext : DbContext
     }
 
     public DbSet<User> Users => Set<User>();
+
+    public DbSet<Medicine> Medicines => Set<Medicine>();
+
+    public DbSet<MedicineUnit> MedicineUnits => Set<MedicineUnit>();
 }
